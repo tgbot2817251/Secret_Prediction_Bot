@@ -1,23 +1,13 @@
 {
-  "name": "miniapppredictionbot",
+  "name": "miniapp-prediction-bot",
   "version": "1.0.0",
+  "description": "A Telegram bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "axios": "^1.7.9",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "node-telegram-bot-api": "^0.66.0",
-    "telegraf": "^4.16.3"
-    "dependencies": {
-  "express": "^4.18.2"
-}
-
+    "express": "^4.18.2",
+    "node-telegram-bot-api": "^0.61.0"
   }
 }
