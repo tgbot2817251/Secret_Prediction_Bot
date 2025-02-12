@@ -102,5 +102,13 @@ bot.launch();
 console.log("🤖 Bot is running...");
 
 
-const PORT = process.env.PORT || 8000;
+const express = require('express');  // Express.js इम्पोर्ट करें
+const app = express();  // Express ऐप इनिशियलाइज़ करें
+
+const PORT = process.env.PORT || 3000; // पोर्ट सेट करें
+
+app.get('/', (req, res) => {
+    res.send('Bot is running!');
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
