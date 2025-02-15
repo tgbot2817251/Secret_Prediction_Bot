@@ -14,22 +14,22 @@ bot.start(async (ctx) => {
     await ctx.replyWithPhoto(
         "https://t.me/Only_4_photos/2", // 🔹 Yaha Apna Image URL Dalein
         {
-            caption: "👋 Welcome! Join both channels to continue.",
+            caption: "👋 ᴡᴇʟᴄᴏᴍᴇ! ᴊᴏɪɴ ᴀʟʟ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴄʟɪᴄᴋ ᴠᴇʀɪꜰʏ..",
             reply_markup: {
                 inline_keyboard: [
                     [
                         {
-                            text: "📢 JOIN CHANNEL 1",
+                            text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟭",
                             url: `https://t.me/${channel1.replace("@", "")}`,
                         },
                     ],
                     [
                         {
-                            text: "📢 JOIN CHANNEL 2",
+                            text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟮",
                             url: `https://t.me/${channel2.replace("@", "")}`,
                         },
                     ],
-                    [{ text: "✅ VERIFY", callback_data: "verify" }],
+                    [{ text: "✅ 𝗩𝗘𝗥𝗜𝗙𝗬", callback_data: "verify" }],
                 ],
             },
         },
@@ -59,15 +59,15 @@ bot.action("verify", async (ctx) => {
                 "https://t.me/Only_4_photos/2", // 🔹 Yaha Apna Image URL Dalein
                 {
                     caption:
-                        `🎉 *Congratulations, ${ctx.from.first_name}!* 🎉\n\n` +
-                        `✅ You have successfully verified your membership!\n` +
-                        `🚀 Now, choose a hack below and start winning! 🎮🔥`,
+                        `🎉 *ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ${ctx.from.first_name}!* 🎉\n\n` +
+                        `✅ ʏᴏᴜ ʜᴀᴠᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ!!\n` +
+                        `🚀 ɴᴏᴡ, ᴄʜᴏᴏꜱᴇ ᴀ ʜᴀᴄᴋ ʙᴇʟᴏᴡ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴡɪɴɴɪɴɢ!! 🎮🔥`,
                     parse_mode: "Markdown",
                     reply_markup: {
                         inline_keyboard: [
                             [
                                 {
-                                    text: "🎮 Mines Hack",
+                                    text: "🎮 𝗠𝗜𝗡𝗘𝗦 𝗛𝗔𝗖𝗞",
                                     web_app: {
                                         url: "https://team19sachin.github.io/MinesPrediction/",
                                     },
@@ -75,7 +75,7 @@ bot.action("verify", async (ctx) => {
                             ],
                             [
                                 {
-                                    text: "🎯 Wingo Hack",
+                                    text: "🎯 𝗪𝗜𝗡𝗚𝗢 𝗛𝗔𝗖𝗞",
                                     web_app: {
                                         url: "https://team19sachin.github.io/WingoPrediction/",
                                     },
@@ -87,7 +87,7 @@ bot.action("verify", async (ctx) => {
             );
         } else {
             // ❌ Agar user dono channels me nahi hai, warning do
-            await ctx.reply("⚠️ You must join **both** channels to continue!");
+            await ctx.reply("⚠️ ʏᴏᴜ ᴍᴜꜱᴛ ᴊᴏɪɴ ᴀʟʟ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ!");
         }
     } catch (error) {
         console.error("Verification Error:", error);
