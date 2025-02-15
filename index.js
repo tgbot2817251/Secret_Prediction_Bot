@@ -15,7 +15,7 @@ bot.start(async (ctx) => {
     await ctx.replyWithPhoto(
         'https://t.me/Only_4_photos/2', // 🔹 Yaha Apna Image URL Dalein
         {
-            caption: "👋 Welcome! Join both channels to continue.",
+            caption: "👋 ᴡᴇʟᴄᴏᴍᴇ! ᴊᴏɪɴ ᴀʟʟ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴄʟɪᴄᴋ ᴠᴇʀɪꜰʏ.",
             reply_markup: {
                 inline_keyboard: [
                     [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟭", url: `https://t.me/${channel1.replace('@', '')}` }],
