@@ -13,7 +13,7 @@ bot.start(async (ctx) => {
     const chatId = ctx.chat.id;
 
     await ctx.replyWithPhoto(
-        'https://t.me/Only_4_photos/2', // 🔹 Yaha Apna Image URL Dalein
+        'https://t.me/Only_4_photos/4', // 🔹 Yaha Apna Image URL Dalein
         {
             caption: "👋 ᴡᴇʟᴄᴏᴍᴇ! ᴊᴏɪɴ ᴀʟʟ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴄʟɪᴄᴋ ᴠᴇʀɪꜰʏ.",
             reply_markup: {
