@@ -4,7 +4,7 @@ const axios = require('axios');
 const bot = new Telegraf('7981454522:AAFhST6s31OunWwgOTg6k-JoNbVxKz4ad-U'); // 🔹 Apna BOT Token Yaha Dalein
 
 // 🔹 Aapke Telegram Channels (Apne Replace Karein)
-const channel1 = '@official_team_19';
+const channel1 = '@mines_prediction';
 const channel2 = '@team19_Secrets';
 const channel3 = '@team19sachin';
 
