@@ -1,12 +1,18 @@
+require('dotenv').config(); // Load environment variables from .env
 const { Telegraf } = require('telegraf');
 const axios = require('axios');
 
-const bot = new Telegraf('7981454522:AAFhST6s31OunWwgOTg6k-JoNbVxKz4ad-U'); // 🔹 Apna BOT Token Yaha Dalein
+// Use the token from .env file
+const bot = new Telegraf(process.env.BOT_TOKEN);
+
+// Rest of your code...
+
 
 // 🔹 Aapke Telegram Channels (Apne Replace Karein)
-const channel1 = '@official_team_19';
-const channel2 = '@team19_Secrets';
+const channel1 = '@mines_Prediction';
+const channel2 = '@goalgame_prediction';
 const channel3 = '@team19sachin';
+const channel4 = '@+gpt7bMQia4kyMzJl';
 
 // 🔹 Start command – Image + Message + Buttons
 bot.start(async (ctx) => {
@@ -21,6 +27,7 @@ bot.start(async (ctx) => {
                     [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟭", url: `https://t.me/${channel1.replace('@', '')}` }],
                     [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟮", url: `https://t.me/${channel2.replace('@', '')}` }],
                     [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟯", url: `https://t.me/${channel3.replace('@', '')}` }],
+                    [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟰", url: `https://t.me/${channel4.replace('@', '')}` }],
                     [{ text: "✅ 𝗩𝗘𝗥𝗜𝗙𝗬", callback_data: "verify" }]
                 ]
             }
