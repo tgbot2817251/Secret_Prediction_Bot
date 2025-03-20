@@ -11,8 +11,9 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 // 🔹 Aapke Telegram Channels (Apne Replace Karein)
 const channel1 = '@mines_Prediction';
 const channel2 = '@goalgame_prediction';
-const channel3 = '@team19sachin';
-const channel4 = '@+gpt7bMQia4kyMzJl';
+const channel3 = '@+anWRjjpfP3NjYjI9';
+const channel4 = '@team19sachin';
+const channel5 = '@+gpt7bMQia4kyMzJl';
 
 // 🔹 Start command – Image + Message + Buttons
 bot.start(async (ctx) => {
@@ -28,6 +29,7 @@ bot.start(async (ctx) => {
                     [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟮", url: `https://t.me/${channel2.replace('@', '')}` }],
                     [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟯", url: `https://t.me/${channel3.replace('@', '')}` }],
                     [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟰", url: `https://t.me/${channel4.replace('@', '')}` }],
+                    [{ text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟱", url: `https://t.me/${channel4.replace('@', '')}` }],
                     [{ text: "✅ 𝗩𝗘𝗥𝗜𝗙𝗬", callback_data: "verify" }]
                 ]
             }
@@ -49,7 +51,7 @@ bot.action('verify', async (ctx) => {
         const isMember2 = ['member', 'administrator', 'creator'].includes(res2.status);
 
         // ✅ Check if User is in Channel 3
-        const res3 = await ctx.telegram.getChatMember(channel3, userId);
+        const res3 = await ctx.telegram.getChatMember(channel4, userId);
         const isMember3 = ['member', 'administrator', 'creator'].includes(res3.status);
 
         if (isMember1 && isMember2 && isMember3) {
